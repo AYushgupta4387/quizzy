@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden; /* Disable scroll on body */
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.displayBlock {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.displayBlock:nth-child(1) {
+  background-color: burlywood;
+}
+
+.displayBlock:nth-child(2) {
+  background-color: maroon;
+}
+
+.displayBlock:nth-child(3) {
+  background-color: rebeccapurple;
+}
+
+.displayBlock:nth-child(4) {
+  background-color: royalblue;
+}
